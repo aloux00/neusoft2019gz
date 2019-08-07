@@ -8,7 +8,11 @@ import org.apache.ibatis.type.Alias;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import lombok.Data;
-//用户的Model类
+
+/*
+ * 模块：安全管理   表：userinfo
+ * 用户：张云强
+ */
 @Alias("User")
 @Data
 public class UserModel implements Serializable {
