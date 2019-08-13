@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>东软办公自动化OA客系统</title>
+  <title>物业管理系统</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -55,9 +55,9 @@
     <!-- Logo -->
     <a href="#" class="logo">
     
-     <span class="logo-mini"><b>OA</b></span>
+     <span class="logo-mini"><b>wuye</b></span>
      
-     <span class="logo-lg"><b>东软办公自动化系统</b></span>
+     <span class="logo-lg"><b>物业管理系统</b></span>
    </a>
 
     <!-- Header Navbar: style can be found in header.less -->
@@ -111,33 +111,143 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">主功能选择</li>
        
+        <!--房产管理-->
         <li class="treeview menu-open">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>人力信息管理</span>
+            <i class="fa fa-dashboard"></i> <span>房产管理</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="department/main.html"><i class="fa fa-circle-o"></i>部门管理</a></li>
-          	<li><a href="role/main.html"><i class="fa fa-circle-o"></i>角色管理</a></li>
-            <li><a href="employee/main.html"><i class="fa fa-circle-o"></i>员工管理</a></li>
+          <li><a href="employee/main.html"><i class="fa fa-circle-o"></i>员工管理</a></li>
+           <li><a href="#"><i class="fa fa-circle-o"></i> 小区管理</a></li>
+           <li><a href="#"><i class="fa fa-circle-o"></i> 楼宇管理</a></li>
+		   <li><a href="#"><i class="fa fa-circle-o"></i> 房间档案管理</a></li>
+		   <li><a href="#"><i class="fa fa-circle-o"></i> 房间状态图示</a></li>
+			
           </ul>
         </li>
-        
-        <li class="treeview menu-open">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>文档管理</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="department/main.html"><i class="fa fa-circle-o"></i>起草文档</a></li>
-          	<li><a href="role/main.html"><i class="fa fa-circle-o"></i>发布文档</a></li>
-            <li><a href="employee/main.html"><i class="fa fa-circle-o"></i>接收文档员工管理</a></li>
-          </ul>
-        </li>
+		 <!--客户管理-->
+		<li class="treeview menu-open">
+		  <a href="#">
+		    <i class="fa fa-dashboard"></i> <span>客户管理</span>
+		    <span class="pull-right-container">
+		      <i class="fa fa-angle-left pull-right"></i>
+		    </span>
+		  </a>
+		  <ul class="treeview-menu">
+		    <li class="active"><a href="#"><i class="fa fa-circle-o"></i> 客户档案</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 迁入管理</a></li>
+			<li><a href="#"><i class="fa fa-circle-o"></i> 楼宇</a></li>
+			<li><a href="#"><i class="fa fa-circle-o"></i> 客户历史查询</a></li>
+		  </ul>
+		</li>
+		 <!--抄表管理-->
+		<li class="treeview menu-open">
+		  <a href="#">
+		    <i class="fa fa-dashboard"></i> <span>抄表管理</span>
+		    <span class="pull-right-container">
+		      <i class="fa fa-angle-left pull-right"></i>
+		    </span>
+		  </a>
+		  <ul class="treeview-menu">
+		    <li class="active"><a href="#"><i class="fa fa-circle-o"></i> 表计类别设置</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 表计档案管理</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 抄表录入管理</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 抄表历史查询</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 表计换表统计</a></li>
+		  </ul>
+		</li>
+	    <!-- 收费管理 -->
+		<li class="treeview menu-open">
+		  <a href="#">
+		    <i class="fa fa-dashboard"></i> <span>收费管理</span>
+		    <span class="pull-right-container">
+		      <i class="fa fa-angle-left pull-right"></i>
+		    </span>
+		  </a>
+		  <ul class="treeview-menu">
+		    <li class="active"><a href="#"><i class="fa fa-circle-o"></i>  基本收费项目设置 </a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 房间收费项目设置</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i>应收记录管理</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 前台收费营业</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 开单录入管理</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 已收记录归档</a></li>		 
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 退费管理</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 押金管理</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 催费通知管理</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 预收款管理</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 坏账管理</a></li>	
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 收费记录金额减免</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 阶梯价格管理</a></li>	    
+		  </ul>
+		</li>
+		<!-- 事务提醒 -->
+		<li class="treeview menu-open">
+		  <a href="#">
+		    <i class="fa fa-dashboard"></i> <span>事务提醒</span>
+		    <span class="pull-right-container">
+		      <i class="fa fa-angle-left pull-right"></i>
+		    </span>
+		  </a>
+		  <ul class="treeview-menu">
+		    <li class="active"><a href="#"><i class="fa fa-circle-o"></i> 费用到期提醒</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i>欠费提醒</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i>入住到期提醒</a></li>
+		  </ul>
+		</li>
+		<!-- 租赁管理 -->
+		<li class="treeview menu-open">
+		  <a href="#">
+		    <i class="fa fa-dashboard"></i> <span>租赁管理</span>
+		    <span class="pull-right-container">
+		      <i class="fa fa-angle-left pull-right"></i>
+		    </span>
+		  </a>
+		  <ul class="treeview-menu">
+		    <li class="active"><a href="#"><i class="fa fa-circle-o"></i> 合同档案管理</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 租赁房间查询</a></li>
+		    
+		  </ul>
+		</li>
+		<!-- 财务统计 -->
+		<li class="treeview menu-open">
+		  <a href="#">
+		    <i class="fa fa-dashboard"></i> <span>财务统计</span>
+		    <span class="pull-right-container">
+		      <i class="fa fa-angle-left pull-right"></i>
+		    </span>
+		  </a>
+		  <ul class="treeview-menu">
+		    <li class="active"><a href="#"><i class="fa fa-circle-o"></i> 房间应收记录统计</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 客户缴费历史查询</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 收费流水统计</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 押金统计</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 预收款统计</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 客户结余金额统计</a></li>		 
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 退费历史统计</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 财务汇总统计</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 收费项目收费状况</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 房间收费状况</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 管理处收费状况</a></li>	
+		  </ul>
+		</li>
+		<!-- 客户服务 -->
+		<li class="treeview menu-open">
+		  <a href="#">
+		    <i class="fa fa-dashboard"></i> <span>客户服务</span>
+		    <span class="pull-right-container">
+		      <i class="fa fa-angle-left pull-right"></i>
+		    </span>
+		  </a>
+		  <ul class="treeview-menu">
+		    <li class="active"><a href="#"><i class="fa fa-circle-o"></i>投诉建议</a></li>
+		    <li><a href="#"><i class="fa fa-circle-o"></i> 维修服务</a></li>
+			<li><a href="#"><i class="fa fa-circle-o"></i> 装修服务</a></li>
+		  </ul>
+		</li>
+      
         
       </ul>
     </section>
