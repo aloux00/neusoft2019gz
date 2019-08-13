@@ -8,7 +8,7 @@ import com.neusoft.wuyemis.model.DepartmentModel;
 
 /*
  * 部门业务层接口
- * @Author: 吕海东
+ * @Author: 
  */
 public interface IDepartmentService {
 	//增加

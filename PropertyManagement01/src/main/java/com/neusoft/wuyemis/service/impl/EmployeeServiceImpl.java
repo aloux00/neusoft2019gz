@@ -11,9 +11,9 @@ import com.neusoft.wuyemis.mapper.IEmployeeMapper;
 import com.neusoft.wuyemis.model.EmployeeModel;
 import com.neusoft.wuyemis.service.IEmployeeService;
 /*
- * 模块：人力资源HR
+ * 模块：
  * 员工部门业务实现类
- * @Author: 吕海东
+ * @Author: 
  */
 @Service
 @Transactional(rollbackFor = Exception.class)

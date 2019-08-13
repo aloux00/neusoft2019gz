@@ -9,7 +9,7 @@ import lombok.Data;
 
 /*
  * 部门的Model类
- * @Author: 吕海东
+ * @Author: 
  */
 @Alias("Department")
 @Data

@@ -16,7 +16,7 @@ import com.neusoft.wuyemis.service.IEmployeeService;
 import com.neusoft.wuyemis.message.ResultMessage;
 
 /*
- * 模块：HR 人力资源
+ * 模块：
  * Controller层：员工控制器Controller类
  * @Author: 
  */

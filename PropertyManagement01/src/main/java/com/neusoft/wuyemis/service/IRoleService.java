@@ -7,7 +7,7 @@ import com.neusoft.wuyemis.model.RoleModel;
 
 /*
  * 角色业务层接口
- * @Author: 吕海东
+ * @Author: 
  */
 public interface IRoleService {
 

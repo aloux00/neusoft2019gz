@@ -16,9 +16,9 @@ import com.neusoft.wuyemis.service.IRoleService;
 import com.neusoft.wuyemis.message.ResultMessage;
 
 /*
- * 模块：HR 人力资源
+ * 模块：
  * 角色控制层Controller
- * @Author: 吕海东
+ * @Author:
  */
 @RestController
 @RequestMapping(value="/role")

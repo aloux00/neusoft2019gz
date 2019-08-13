@@ -7,7 +7,7 @@ import com.neusoft.wuyemis.model.EmployeeModel;
 /*
  * 模块：人力资源HR
  * 员工部门业务接口
- * @Author: 吕海东
+ * @Author: 
  */
 public interface IEmployeeService {
 

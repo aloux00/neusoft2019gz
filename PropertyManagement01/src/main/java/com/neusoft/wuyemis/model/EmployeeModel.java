@@ -13,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 /*
  * 员工的Model类
- * @Author: 吕海东
+ * @Author: 
  */
 @Alias("Employee")
 @Data

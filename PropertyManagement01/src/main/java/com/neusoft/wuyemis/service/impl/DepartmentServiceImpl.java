@@ -11,9 +11,9 @@ import com.neusoft.wuyemis.model.DepartmentModel;
 import com.neusoft.wuyemis.service.IDepartmentService;
 import com.neusoft.wuyemis.service.IEmployeeService;
 /*
- * 模块：HR 人力资源
+ * 模块：
  * 部门业务层接口的实现类
- * @Author: 吕海东
+ * @Author: 
  */
 @Service
 @Transactional(rollbackFor = Exception.class)

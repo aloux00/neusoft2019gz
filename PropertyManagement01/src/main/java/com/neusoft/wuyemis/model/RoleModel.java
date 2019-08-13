@@ -9,7 +9,7 @@ import lombok.Data;
 
 /*
  * 员工角色的Model类
- * @Author: 吕海东
+ * @Author: 
  */
 @Alias("Role")
 @Data

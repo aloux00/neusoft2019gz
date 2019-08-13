@@ -9,7 +9,7 @@ import com.neusoft.wuyemis.model.DepartmentModel;
 
 /*
  * 部门的DAO层MyBatis Mapper接口
- * @Author: 吕海东
+ * @Author: 
  */
 @Mapper
 public interface IDepartmentMapper {
