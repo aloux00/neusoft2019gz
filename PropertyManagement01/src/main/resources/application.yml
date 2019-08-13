@@ -19,7 +19,7 @@ mybatis:
  
 logging:
   level:
-    com.neusoft.oa.hr.mapper: debug
+    com.neusoft.wuyemis.mapper: debug
     
 
 
