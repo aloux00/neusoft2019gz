@@ -1,0 +1,28 @@
+<!-- Main row -->
+<div class="row">
+    <div class="col-xs-12">
+      <div class="box-body">
+        <!-- 修改部门 -->
+       	    <form id="DepartmentModifyForm" role="form" action="department/modify" method="post">
+              
+                <div class="form-group">
+                  <label>部门编码</label>
+                  <input type="text" class="form-control" name="code"  placeholder="编码">
+                </div>
+                <div class="form-group">
+                  <label>部门名称</label>
+                  <input type="text" class="form-control" name="name"  placeholder="名称">
+                </div>
+               
+               <div class="form-group">
+                 <input type="submit" class="btn btn-primary" value="提交" />
+                 <input type="button" class="btn btn-primary" value="取消">
+                 <input type="hidden" name="no" readonly  />
+               </div>
+            </form>
+      </div>
+      <!-- /.box-body -->
+    </div>
+    
+    
+ </div>
