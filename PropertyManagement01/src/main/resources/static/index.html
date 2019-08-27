@@ -3,13 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>物业管理系统</title>
-  <!-- Tell the browser to be responsive to screen width -->
+ <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  
+  <!-- jquery UI CSS -->
+  <link rel="stylesheet" href = "dist/jqueryui/jquery-ui.min.css">
+  <!--  -->
+  <link rel="stylesheet" type="text/css" media="screen" href="dist/jqgrid/css/ui.jqgrid-bootstrap.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="bower_components/morris.js/morris.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="dist/jqgrid/css/ui.jqgrid-bootstrap.css" />
   <!-- jquery UI CSS -->
   <link rel="stylesheet" href="dist/jqueryui/jquery-ui.min.css">
+  <!--  -->
+  
+  
   <!-- Font Awesome -->
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
@@ -24,7 +53,9 @@
   <!-- 引入Bootstrap3-dialog -->
   <link rel="stylesheet" href="dist/bootstrap3-dialog/css/bootstrap-dialog.min.css">
   
+  <!--  jq3.4.1-->
   <script type="text/javascript" src="dist/jquery/jquery-3.4.1.min.js"></script>
+  
   <!-- Bootstrap 3.3.7 -->
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- jquery UI JS -->
@@ -45,22 +76,32 @@
 	<!-- JQuery Form Plugin -->
 	<script type="text/javascript" src="dist/jqueryform/jquery.form.min.js"></script>
 	
-  	<script type="text/javascript" src="js/index.js"></script>
- </head>
- 
+	<script type="text/ecmascript" src="dist/jqgrid/js/i18n/grid.locale-cn.js"></script>
+	<script type="text/ecmascript" src="dist/jqgrid/js/jquery.jqGrid.js"></script>
+	
+	<!-- jQuery validate验证框架 -->
+	<script src="dist/jqueryvalidate/jquery.validate.min.js"></script>
+	<script src="dist/jqueryvalidate/additional-methods.min.js"></script>
+	<script src="dist/jqueryvalidate/localization/messages_zh.min.js"></script>
+	<!-- 引入自己的js文件 -->
+  	<script type="text/javascript" src="index.js"></script>
+  	
+
+</head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-  <!-- header -->
+
   <header class="main-header">
     <!-- Logo -->
-    <a href="#" class="logo">
     
-     <span class="logo-mini"><b>wuye</b></span>
-     
-     <span class="logo-lg"><b>物业管理系统</b></span>
-   </a>
-
-    <!-- Header Navbar: style can be found in header.less -->
+    <a href="#" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>A</b>LT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>物业管理系统</b></span>
+      </a>
+      
+      <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
@@ -69,30 +110,7 @@
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-          
-          <!-- User Account: style can be found in dropdown.less -->
-          <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <span class="hidden-md">
-                                     未登录
-                
-              </span>
-            </a>
-            <ul class="dropdown-menu">
-              
-              
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                
-                <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">注销退出</a>
-                </div>
-                <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">修改密码</a>
-                </div>
-              </li>
-            </ul>
-          </li>
+        
           <!-- Control Sidebar Toggle Button -->
           <li>
             <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
@@ -101,16 +119,20 @@
       </div>
 
     </nav>
+    
   </header>
+  
+  <!-- 左部导航栏 -->
+  
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
+     
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">主功能选择</li>
-       
+        <li class="header"> 主菜单</li>
         <!--房产管理-->
         <li class="treeview menu-open">
           <a href="#">
@@ -120,17 +142,13 @@
             </span>
           </a>
           <ul class="treeview-menu">
-          <li><a href="employee/main.html"><i class="fa fa-circle-o"></i>员工管理</a></li>
-          <li><a href="department/main.html"><i class="fa fa-circle-o"></i>部门管理</a></li>
-          <li><a href="role/main.html"><i class="fa fa-circle-o"></i>角色管理</a></li>
-          <li><a href="#"><i class="fa fa-circle-o"></i> 小区管理</a></li>
-          <li><a href="#"><i class="fa fa-circle-o"></i> 楼宇管理</a></li>
-		  <li><a href="#"><i class="fa fa-circle-o"></i> 房间档案管理</a></li>
-		  <li><a href="#"><i class="fa fa-circle-o"></i> 房间状态图示</a></li>
-			
+           <li><a href="AreaManager/main.html"><i class="fa fa-circle-o"></i> 小区管理</a></li>
+           <li><a href="BuildingManager/main.html"><i class="fa fa-circle-o"></i> 楼宇管理</a></li>
+		   <li><a href="RoomManager/main.html"><i class="fa fa-circle-o"></i> 房间管理</a></li>
+		   <li><a href="BuildingType/main.html"><i class="fa fa-circle-o"></i> 房间状态图示</a></li>
           </ul>
-        </li>
-		 <!--客户管理-->
+         </li>
+		 <!--车位管理-->
 		<li class="treeview menu-open">
 		  <a href="#">
 		    <i class="fa fa-dashboard"></i> <span>客户管理</span>
@@ -139,13 +157,14 @@
 		    </span>
 		  </a>
 		  <ul class="treeview-menu">
-		    <li class="active"><a href="#"><i class="fa fa-circle-o"></i> 客户档案</a></li>
+		    <li><a href="ParkManager/main.html"><i class="fa fa-circle-o"></i> 车位列表</a></li>
 		    <li><a href="#"><i class="fa fa-circle-o"></i> 迁入管理</a></li>
-			<li><a href="#"><i class="fa fa-circle-o"></i> 楼宇</a></li>
+			<li><a href="#"><i class="fa fa-circle-o"></i> 迁出管理</a></li>
 			<li><a href="#"><i class="fa fa-circle-o"></i> 客户历史查询</a></li>
 		  </ul>
 		</li>
-		 <!--抄表管理-->
+		
+		<!--抄表管理
 		<li class="treeview menu-open">
 		  <a href="#">
 		    <i class="fa fa-dashboard"></i> <span>抄表管理</span>
@@ -161,6 +180,8 @@
 		    <li><a href="#"><i class="fa fa-circle-o"></i> 表计换表统计</a></li>
 		  </ul>
 		</li>
+		-->
+		
 	    <!-- 收费管理 -->
 		<li class="treeview menu-open">
 		  <a href="#">
@@ -230,7 +251,7 @@
 		    <li><a href="#"><i class="fa fa-circle-o"></i> 客户结余金额统计</a></li>		 
 		    <li><a href="#"><i class="fa fa-circle-o"></i> 退费历史统计</a></li>
 		    <li><a href="#"><i class="fa fa-circle-o"></i> 财务汇总统计</a></li>
-		    <li><a href="#"><i class="fa fa-circle-o"></i> 收费项目收费状况</a></li>
+		    <li><a href="feeitem/main.html"><i class="fa fa-circle-o"></i> 收费项目收费状况</a></li>
 		    <li><a href="#"><i class="fa fa-circle-o"></i> 房间收费状况</a></li>
 		    <li><a href="#"><i class="fa fa-circle-o"></i> 管理处收费状况</a></li>	
 		  </ul>
@@ -250,32 +271,47 @@
 		  </ul>
 		</li>
       
-        
-      </ul>
     </section>
     <!-- /.sidebar -->
   </aside>
-
+  
+  
+  
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1><span id="mainpagetille"></span></h1>
+      <h1>
+        物业管理系统
+      </h1>
+      <!--  -->
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i>主页</a></li>
-        <li class="active">仪表盘</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">#</li>
       </ol>
     </section>
-    <!-- 主内容显示区 -->
+    
+    <!-- 主内容显示区域 -->
+    
     <section class="content" id="maincontent">
-      
+    
     </section>
   </div>
- <footer class="main-footer">
-    <div class="pull-right hidden-xs"><b>版本</b> 1.0</div>
-    <strong>COPYRIGHT 2019 <a href="https://adminlte.io">东软集团有限公司</a>.</strong> 版权所有
+  
+  
+  <!-- 底部版权说明 -->
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 2.4.0
+    </div>
+    <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
+    reserved.
   </footer>
   <div class="control-sidebar-bg"></div>
 </div>
+<!-- ./wrapper -->
+
+
 </body>
 </html>
