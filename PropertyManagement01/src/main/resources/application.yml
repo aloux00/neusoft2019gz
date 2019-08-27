@@ -1,21 +1,21 @@
 server:
-  port: 8088
-
-
+  port: 8080
+  
 spring:
-  datasource:
+ datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.1.53.4:3306/neusoftoa?serverTimezone=GMT%2B8
+    url: jdbc:mysql://10.1.53.53:3317/wumis?serverTimezone=GMT%2B8
     username: root
     password: root
-  jackson:
+
+ jackson:
     date-format: yyyy-MM-dd
     time-zone: GMT+8
       
 mybatis:
   mapper-locations:
   - classpath*:/mappers/**/*.xml
-  type-aliases-package: com.neusoft.wuyemis.model
+  type-aliases-package: com.neusoft.wuyemis.baseinfo.model,com.neusoft.wuyemis.admin.model,com.neusoft.wuyemis.feeinfo.model
  
 logging:
   level:
