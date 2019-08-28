@@ -12,11 +12,11 @@ import com.neusoft.wuyemis.admin.model.UserInfoModel;
 @Mapper
 public interface IUserInfoMapper {
 	   //增加
-		public void add(UserInfoModel user) throws Exception;
+		public void add(UserInfoModel userinfo) throws Exception;
 		//修改
-		public void modify(UserInfoModel user) throws Exception;
+		public void modify(UserInfoModel userinfo) throws Exception;
 		//删除
-		public void delete(UserInfoModel user) throws Exception;
+		public void delete(UserInfoModel userinfo) throws Exception;
 		//取得角色单个对象
 		public UserInfoModel getByNo(int no) throws Exception;
 		//取得所有角色列表
