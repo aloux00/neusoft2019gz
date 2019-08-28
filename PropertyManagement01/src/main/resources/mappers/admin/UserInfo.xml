@@ -13,12 +13,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	
 	<update id="update" flushCache="true">
-	update UserInfo set UPASSWORD=#{upassword},UNAME=#{uname},UserStatus=#{userstatus}
-	where UUSERID=#{uuserid}
+	update UserInfo set UPASSWORD=#{password},UNAME=#{name},UserStatus=#{userstatus}
+	where UUSERID=#{id}
 	</update>
 	
-	<delete  id="delete">
-	
+	<delete  id="delete" flushCache="true">
+	delete from UserInfo where UPASSWORD=#{password}
 	</delete>
 
 
