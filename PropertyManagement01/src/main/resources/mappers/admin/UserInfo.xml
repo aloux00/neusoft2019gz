@@ -1,1 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.wuyemis.admin.mapper.IUserInfoMapper">
+	<cache/>
+	
+	<insert id="insert" keyProperty="no"   keyColumn="UUSERID" useGeneratedKeys="true" flushCache="true" >
+	insert into UserInfo(UPASSWORD,UNAME,UserStatus)
+	value (#{UPASSWORD},#{UNAME},#{UserStatus})
+	
+	</insert >
+	
+	
+	<update id="update" flushCache="true">
+	update UserInfo set UPASSWORD=#{upassword},UNAME=#{uname},UserStatus=#{userstatus}
+	where UUSERID=#{uuserid}
+	</update>
+	
+	<delete  id="delete">
+	
+	</delete>
+
+
+
+
+
+</mapper>

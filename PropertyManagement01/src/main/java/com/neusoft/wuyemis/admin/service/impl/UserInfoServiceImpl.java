@@ -8,11 +8,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.neusoft.wuyemis.admin.mapper.IUserInfoMapper;
 import com.neusoft.wuyemis.admin.model.UserInfoModel;
+import com.neusoft.wuyemis.admin.service.IUserInfoService;
 
 @Service
-@Transactional(rollbackFor = Exception.class)
-public class UserInfoServiceImpl implements IUserInfoMapper {
-	
+@Transactional
+public class UserInfoServiceImpl implements IUserInfoService {
 	@Autowired
 	private IUserInfoMapper userInfoMapper=null;
 	@Override
@@ -23,7 +23,7 @@ public class UserInfoServiceImpl implements IUserInfoMapper {
 
 	@Override
 	public void modify(UserInfoModel userinfo) throws Exception {
-	    
+		userInfoMapper.modify(userinfo);
 
 	}
 
@@ -34,33 +34,15 @@ public class UserInfoServiceImpl implements IUserInfoMapper {
 	}
 
 	@Override
-	public UserInfoModel getByNo(int no) throws Exception {
+	public List<UserInfoModel> selsetListByAll() throws Exception {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<UserInfoModel> getListByAll() throws Exception {
+	public UserInfoModel getById(String id) throws Exception {
 		// TODO Auto-generated method stub
 		return null;
-	}
-
-	@Override
-	public List<UserInfoModel> getListByAllWithPage(int rows, int page) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public int getCountByAll() throws Exception {
-		
-		return userInfoMapper.getCountByAll() ;
-	}
-
-	@Override
-	public int getPagaCountByAll(int rows) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 }

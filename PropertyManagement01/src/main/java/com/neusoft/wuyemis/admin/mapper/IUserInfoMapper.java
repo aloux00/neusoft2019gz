@@ -12,7 +12,7 @@ import com.neusoft.wuyemis.admin.model.UserInfoModel;
 @Mapper
 public interface IUserInfoMapper {
 	   //增加
-		public void add(UserInfoModel userinfo) throws Exception;
+		public void insert(UserInfoModel userinfo) throws Exception;
 		//修改
 		public void modify(UserInfoModel userinfo) throws Exception;
 		//删除
