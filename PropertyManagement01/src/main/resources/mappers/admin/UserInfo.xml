@@ -18,7 +18,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</update>
 	
 	<delete  id="delete" flushCache="true">
-	delete from UserInfo where UPASSWORD=#{password}
+	delete from UserInfo where UUSERID=#{id}
 	</delete>
 
 

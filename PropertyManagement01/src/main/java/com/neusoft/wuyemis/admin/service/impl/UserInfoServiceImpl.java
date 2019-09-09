@@ -22,7 +22,7 @@ public class UserInfoServiceImpl implements IUserInfoService {
 	
 	
 	@Override
-	public void add(UserInfoModel userinfo) throws Exception {
+	public void register(UserInfoModel userinfo) throws Exception {
 	
 
 	}

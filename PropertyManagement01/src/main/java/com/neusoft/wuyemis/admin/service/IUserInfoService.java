@@ -11,7 +11,7 @@ import com.neusoft.wuyemis.admin.model.UserInfoModel;
  */
 public interface IUserInfoService {
 	//注册用户
-	public void add(UserInfoModel userinfo) throws Exception;
+	public void register(UserInfoModel userinfo) throws Exception;
 	//修改用户
 	public void modify(UserInfoModel userinfo) throws Exception;
 

@@ -18,8 +18,8 @@ public class UserInfoController {
 	private IUserInfoService userInfoService=null;
 	//增加
 	@RequestMapping("/add")
-	public ResultMessage<UserInfoModel>add(UserInfoModel userinfo) throws Exception {
-		userInfoService.add(userinfo);
+	public ResultMessage<UserInfoModel>register(UserInfoModel userinfo) throws Exception {
+		userInfoService.register(userinfo);
 		return new ResultMessage<UserInfoModel>("OK","增加成功");
 	}
     //修改
